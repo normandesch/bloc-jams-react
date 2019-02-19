@@ -2,6 +2,7 @@ import React from 'react';
 
 const Landing = () => (
   <section className="landing">
+<<<<<<< HEAD
   <h1 className="hero-title">Turn the music up!</h1>
 
   <section className="selling-points">
@@ -18,6 +19,9 @@ const Landing = () => (
       <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
     </div>
   </section>
+=======
+    Landing page will go here
+>>>>>>> landing
   </section>
 );
 
