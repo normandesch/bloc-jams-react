@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 
-class PlayerBar extends Component {
- render() {
-   return (
-     <section className="player-bar">
-       <section id="buttons">
+ class PlayerBar extends Component {
+
+   render() {
+     return (
+       <section className="player-bar">
+        <section id="buttons">
+
          <button id="previous" onClick={this.props.handlePrevClick}>
-           <span className="ion-skip-backward"></span>
+          <span className="ion-skip-backward"></span>
+         </button>
+
+         <button id="play-pause" onClick={this.props.handleSongClick} >
+           <span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
         </button>
-        <button id="play-pause" onClick={this.props.handleSongClick} >
-            <span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
+
+         <button id="next" onClick={this.props.handleNextClick}>
+           <span className="ion-skip-forward"></span>
         </button>
-        <button id="next" onClick={this.props.handleNextClick}>
-          <span className="ion-skip-forward"></span>
-        </button>
-      </section>
+       </section>
 
      <section id="time-control">
        <div className="current-time">{this.props.currentTime}</div>
@@ -32,15 +36,14 @@ class PlayerBar extends Component {
 
      <section id="volume-control">
        <div className="current-volume">{this.props.currentVolume}</div>
-
        <input
         type="range"
         className="volume-bar"
-        value={this.props.currentVolume || 1}
+        value=value={(this.props.currentVolume) || 0}
         min="0"
         max="100"
         step="0.01"
-        onChange={this.props.handleVolumeChange}
+        onChange={this.audioElement.volume = newVolume}
         />
 
         <div className="total-volume">{this.props.length}</div>
