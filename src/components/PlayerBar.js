@@ -39,11 +39,10 @@ import React, { Component } from 'react';
        <input
         type="range"
         className="volume-bar"
-        value=value={(this.props.currentVolume) || 0}
+        value={this.props.currentVolume}
         min="0"
         max="100"
         step="0.01"
-        onChange={this.audioElement.volume = newVolume}
         />
 
         <div className="total-volume">{this.props.length}</div>
