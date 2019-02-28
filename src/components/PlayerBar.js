@@ -40,9 +40,10 @@ import React, { Component } from 'react';
         type="range"
         className="volume-bar"
         value={this.props.currentVolume}
+        max="1"
         min="0"
-        max="100"
         step="0.01"
+        onChange={this.props.handleVolumeChange}
         />
 
         <div className="total-volume">{this.props.length}</div>
