@@ -1,0 +1,59 @@
+.album {
+  margin-left: 220px;
+  overflow-x: hidden;
+  width: 80%;
+}
+
+.album-info-wrapper {
+  display: block;
+  float: left;
+  padding: 60px 20px 20px 60px;
+}
+
+.artist {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+#album-title {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+#release-info {
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+#album-cover-art {
+  width: 250px;
+}
+
+#song-list {
+  display: block;
+  float: left;
+  margin: 60px 20px 20px 40px;
+  width: 60%;
+  font-size: 18px;
+  text-align: left;
+}
+
+#song-number-column {
+  width: 5%;
+}
+
+#song-title-column {
+  width: 85%;
+}
+
+#song-duration-column {
+  width: 5%;
+}
+
+#song-number-td {
+  font-size: 12px;
+}
+
+#song-duration-td {
+  text-align: right;
+}
